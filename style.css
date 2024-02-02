@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&family=Noto+Sans:wght@100&family=Nunito:wght@700&family=Playfair+Display&family=Vina+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font size: 100px;
+    vertical-align: baseline;
+    
+}
+/*se utiliza contenedorG para adaptar la resolucion de la pantalla de la computadora a pantallas m[as pequeñas*/
+.contenedorG{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    /*background-color: #ffA500;*/
+}
+/*COLOR DE FONDO PARA LA PÁGINA*/
+body {
+    text-align: center;
+    font-family: sans-serif;
+    flex-direction: column;/*esta opción nos permite acomodar el texto en cascada cada vez que se hace zoom*/
+    justify-content: center;
+    background-color: #fff;/*color de fondo de la página*/
+}
+/*ESTILO PARA LA BARRA DE MENÚ*/
+/*color de fondo de la barra de menú*/
+.head {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+/*ubicacion de la barra de navegación*/
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+/*Equipo 1*/
+/*Margen para el texto del logo*/
+.logo{
+    margin-left: 30px;
+}
+
+/*estilo para el texto del logo*/
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+/*estilo para el texto de la barra de menú*/
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/*estilo para el texto de la barra de menú*/
+.navbar a:hover {
+    display: block;
+    padding: 20px 20px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+/*color para cuando se selecciona una sección de la barra de menú*/
+.navbar a:hover {
+    background: #fff; 
+}
+
+/*foto de fondo en el inicio de la página*/
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;/*viewport height*/
+    background: url(imagenes/17.jpg) no-repeat center;
+    filter: saturate(120%);
+    background-size: cover;
+}
+
+/*formato del título de las sección de inicio*/
+.title1{
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: 15vh;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+/*TÍTULOS DENTRO DE LA PÁGINA WEB*/
+/*formato de los títulos de las secciones*/
+.title{
+    margin-top: 25px;
+    margin-bottom: 10px;/*separación entre el título y el texto*/
+    font-size: 60px;/*tamaño de la fuente*/
+    font-weight: 400;/*grosor de la fuente*/
+    font-family: 'Josefine sans', serif;
+    /*background: url(imagenes/fondo.png) repeat center;*/
+    /*text-transform: uppercase;tipo de letra*/
+    color: #000000;
+}
+
+/*formato de los títulos de las secciones*/
+/*.title:hover{
+    margin-top: 25px;
+    margin-bottom: 10px;/*separación entre el título y el texto
+    font-size: 40px; tamaño de la fuente
+    font-weight: 60; grosor de la fuente*/
+    /*text-transform: uppercase;tipo de letra
+    color: #000000;
+}*/
+
+/*Color y tamaño de fuente de página*/
+.texto {
+    text-align: justify;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 30px;
+    color: #000000;/*color de fuente de la página*/
+    padding: 0 100px;
+}
+
+/*Texto de página con columnas*/
+.textop {
+    text-align: justify;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 7 vh;
+    color: #000000;/*color de fuente de la página*/
+    padding: 0 5 vh;
+    
+}
+
+/*color y texto de los botones*/
+.btn {
+    font-family: 'Josefine sans', serif;
+    display: inline-block;
+    font-size: 3vh;
+    margin-top: 4vh;
+    padding: 1vh 3vh;
+    border: 1vh solid #ffA500;
+    border-radius: 3vh ;
+    color: #fff;
+    text-decoration: none;
+    background: #ffA500;
+
+}
+
+/*estilo para cuando el cursor esté sobre el botón*/
+.btn:hover{
+    background: #e2960a ;
+}
+/*el video se quedo en el minuto 34:08*/
+
+
+/*SECCIÓN PARA EL STATEMENT*/
+/*estilo de texto para la caja del statement*/
+.text {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 3vh;
+    color: #000000;/*color de fuente statement*/
+    padding: 0 1%; /*controla los márgenes del texto*/
+}
+
+/*texto del statement*/
+.box-container{
+    /*font-family: Georgia, 'Times New Roman', Times, serif;*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*caja que contiene el statement*/
+.box-container .box{
+    height: 100%;
+    width: 120%;
+    background: #fff; /*color de fondo de la caja de statement*/
+    text-align: justify;
+    border-radius: 1%; 
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 3);
+    margin: 5%;
+}
+
+/*caja que contiene el statement con efecto
+.box-container .box:hover{
+    height: 100%;
+    width: 120%;
+    background: #fff;
+    text-align: justify;
+    border-radius: 1% ;
+    box-shadow: 0 1% 1% rgba(0, 0, 0, 3);
+    margin: 15% ;
+}*/ 
+
+/*ESTILO PARA LA SECCIÓN DEL EQUIPO*/
+/*efectos para las fotos de perfil de los integrantes del equipo*/
+/*color para el nombre de los integrantes del equipo*/
+.name{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    text-align: center;
+    font-size: 5vh;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.952)
+}
+.foto{
+    width: 18%;
+    margin-top: 5vh;
+    margin-bottom: 2vh; 
+    filter: 100%;  /*opacity(80%);*/
+}
+/*.foto:hover{
+filter: saturate(120%); 
+}*/
+.profile{
+    line-height: 100%;
+    text-align: justify;
+    margin-top: 2%;
+    margin-bottom: 2%;/*se tiene que modificar esto para dejar el espacio entre las fotos*/
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 30px;
+    
+}
+
+
+/*SECCIÓN DE DESPEDIDA*/
+/*formato para el texto de despedida*/
+/*la sección de contacto es para las dos líneas de texto antes de la despedida*/
+.contacto {
+    text-align: center;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    font-size: 3vh;
+    color: #000000;
+    padding: 0 100px;   
+}
+
+.contacto2 {
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    font-size: 3vh;
+    color: #000000;
+    padding: 0 100px;   
+}
+.despedida{
+    margin-top: 7vh;
+    margin-bottom: 70px;/*separación entre el título y el texto*/
+    font-size: 5vh;/*tamaño de la fuente*/
+    font-weight: 200;/*grosor de la fuente*/
+    text-transform: uppercase;/*tipo de letra*/
+    color: #000000;
+}
+
+
+/*CARRUSEL DE IMAGENES SEGUNDO INTENTO CON OTRO TUTORIAL*/
+.galeria {
+    padding: 16px;
+}
+
+.imagen-principal{
+    width: 60%;
+    margin-top: 4vh;
+    object-fit: flex;
+    display: block;
+}
+
+.imagen-statement{
+    width: 40%;
+    margin-top: 1vh;
+    object-position: right;
+    display: lock;
+}
+
+
+.lista-imagenes img {
+    width: 60%;
+    object-fit: flex;
+    margin-top: 4vh;
+    margin-right: 2vh;
+    display: block;
+}
+
+.lista-imagenes {
+    display: flex;
+    overflow-y: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.f-enlaces {
+    text-align: center;
+    margin-top: 4vh;
+    margin-bottom: 3vh;
+    font-size: 3vh;
+    rgba(0, 0, 0, 0.952)
+    padding: 0 100px;   }
+
+.col-sm-2 col-md-6 col-lg-6 {
+    text-align: justify;
+}
